@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "评论快填",
+  "version": "1.0",
+  "description": "一键快速填充博客评论信息，支持多个主流评论系统，让评论更加便捷、高效",
+  "author": {
+    "name": "時光",
+    "email": "an_shiguang@163.com",
+    "url": "https://blog.shiguangdev.cn"
+  },
+  "homepage_url": "https://github.com/shiguang-coding",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+} 
