@@ -1,9 +1,15 @@
 # 评论快填 (QuickComment)
 
+<p align="center">
+  <img src="assets/logo/logo-full-400w.png" alt="QuickComment Logo" width="200">
+</p>
+
 [English](README_EN.md) | 中文
 
 ### 简介
 评论快填是一款智能的浏览器扩展，专为博客评论者设计。它能够一键快速填充您的个人信息（昵称、邮箱、网址），支持 Valine、Waline、Twikoo 等多个主流评论系统，让您在浏览博客时的互动体验更加流畅自然。无需重复输入，一键即可完成填充，让评论更专注于内容本身。
+
+![image-20260617165940931](https://img.shiguang666.eu.org/file/1781686784898_20260617165941226.webp)
 
 
 ### 功能特点

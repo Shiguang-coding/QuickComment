@@ -1,0 +1,39 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# 日志文件
+*.log
+npm-debug.log*
+
+# 本地配置
+.mcp.json
+.claude/
+*.local
+
+# 依赖目录
+node_modules/
+
+# 构建输出
+dist/
+build/
+
+# 编辑器配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.temp
+
+# 文档计划
+docs/superpowers/plans/
+
+# Logo 预览文件
+assets/logo/preview.html
+assets/logo/BRAND.md

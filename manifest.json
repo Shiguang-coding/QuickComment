@@ -20,7 +20,18 @@
     "<all_urls>"
   ],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/logo/icon-16.png",
+      "48": "assets/logo/icon-48.png",
+      "128": "assets/logo/icon-128.png"
+    },
+    "default_title": "评论快填"
+  },
+  "icons": {
+    "16": "assets/logo/icon-16.png",
+    "48": "assets/logo/icon-48.png",
+    "128": "assets/logo/icon-128.png"
   },
   "background": {
     "service_worker": "background.js",

@@ -1,9 +1,15 @@
 # QuickComment
 
+<p align="center">
+  <img src="assets/logo/logo-full-400w.png" alt="QuickComment Logo" width="200">
+</p>
+
 [中文](README.md) | English
 
 ### Introduction
 QuickComment is a smart browser extension designed specifically for blog commenters. It enables one-click auto-filling of your personal information (nickname, email, website) and supports multiple mainstream comment systems like Valine, Waline, and Twikoo. This extension makes your blog interaction experience more seamless and natural. No more repetitive typing - just one click to fill in your information, letting you focus on the content of your comments.
+
+![image-20260617165940931](https://img.shiguang666.eu.org/file/1781686784898_20260617165941226.webp)
 
 
 ### Features

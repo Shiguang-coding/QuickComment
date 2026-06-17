@@ -3,58 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
     body {
-      width: 300px;
-      padding: 10px;
+      width: 320px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, #fff7ed 0%, #fffbeb 100%);
+      color: #1e293b;
     }
+    
+    .form-section {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      margin-top: 10px;
+      margin-bottom: 16px;
+    }
+    
     .form-group {
-      margin-bottom: 10px;
+      margin-bottom: 14px;
     }
+    
+    .form-group:last-child {
+      margin-bottom: 0;
+    }
+    
     label {
       display: block;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 13px;
+      color: #475569;
     }
+    
     input {
       width: 100%;
-      padding: 5px;
+      padding: 10px 12px;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.2s ease;
+      background: #f8fafc;
     }
+    
+    input:focus {
+      outline: none;
+      border-color: #f97316;
+      box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+      background: white;
+    }
+    
+    input::placeholder {
+      color: #94a3b8;
+    }
+    
+    .button-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    
     button {
-      width: 100%;
-      padding: 8px;
-      background: #4CAF50;
-      color: white;
+      flex: 1;
+      padding: 10px 16px;
       border: none;
-      border-radius: 4px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
       cursor: pointer;
-      margin-top: 10px;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
     }
+    
+    #save {
+      background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+      color: white;
+    }
+    
+    #save:hover {
+      background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+    }
+    
+    #save:active {
+      transform: translateY(0);
+    }
+    
     #fill {
-      margin-top: 15px;
-      background: #2196F3;
+      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      color: white;
     }
+    
     #fill:hover {
-      background: #1976D2;
+      background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
     }
-    button:hover {
-      background: #45a049;
+    
+    #fill:active {
+      transform: translateY(0);
+    }
+    
+    button:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid #fed7aa;
+      font-size: 11px;
+      color: #94a3b8;
+    }
+    
+    .footer a {
+      color: #f97316;
+      text-decoration: none;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="form-group">
-    <label>昵称</label>
-    <input type="text" id="nickname" placeholder="输入昵称">
+  <div class="form-section">
+    <div class="form-group">
+      <label>昵称</label>
+      <input type="text" id="nickname" placeholder="输入您的昵称">
+    </div>
+    <div class="form-group">
+      <label>邮箱</label>
+      <input type="email" id="email" placeholder="输入您的邮箱">
+    </div>
+    <div class="form-group">
+      <label>网址</label>
+      <input type="url" id="website" placeholder="输入您的博客网址">
+    </div>
   </div>
-  <div class="form-group">
-    <label>邮箱</label>
-    <input type="email" id="email" placeholder="输入邮箱">
+  
+  <div class="button-group">
+    <button id="save">保存设置</button>
+    <button id="fill">立即填充</button>
   </div>
-  <div class="form-group">
-    <label>网址</label>
-    <input type="url" id="website" placeholder="输入网址">
+  
+  <div class="footer">
+    Made with ❤️ by <a href="https://github.com/shiguang-coding" target="_blank">時光</a>
   </div>
-  <button id="save">保存设置</button>
-  <button id="fill">立即填充</button>
+  
   <script src="popup.js"></script>
 </body>
 </html> 

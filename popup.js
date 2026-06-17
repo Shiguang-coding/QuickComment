@@ -55,11 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     chrome.storage.sync.set(settings, function() {
       const saveBtn = document.getElementById('save');
-      saveBtn.textContent = '已保存！';
-      saveBtn.style.background = '#45a049';
+      saveBtn.textContent = '✓ 已保存';
+      saveBtn.style.background = 'linear-gradient(135deg, #16a34a 0%, #15803d 100%)';
       setTimeout(() => {
         saveBtn.textContent = '保存设置';
-        saveBtn.style.background = '#4CAF50';
+        saveBtn.style.background = 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)';
       }, 2000);
     });
   });
@@ -142,15 +142,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       });
 
-      fillBtn.textContent = response?.status === 'success' ? '填充完成' : '立即填充';
-      setTimeout(() => {
+      if (response?.status === 'success') {
+        fillBtn.textContent = '✓ 填充完成';
+        fillBtn.style.background = 'linear-gradient(135deg, #16a34a 0%, #15803d 100%)';
+        setTimeout(() => {
+          fillBtn.textContent = '立即填充';
+          fillBtn.style.background = 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)';
+        }, 1500);
+      } else {
         fillBtn.textContent = '立即填充';
-      }, 1000);
+      }
 
     } catch (error) {
       console.error('填充失败:', error);
       alert('填充失败，请刷新页面后重试');
       fillBtn.textContent = '立即填充';
+      fillBtn.style.background = 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)';
     } finally {
       fillBtn.disabled = false;
     }
