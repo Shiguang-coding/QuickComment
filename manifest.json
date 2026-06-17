@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "评论快填",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "一键快速填充博客评论信息，支持多个主流评论系统，让评论更加便捷、高效",
   "author": {
     "name": "時光",
